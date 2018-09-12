@@ -1,0 +1,19 @@
+
+.App-header {
+	background-color: #24292e;
+	height: 60px;
+	padding: 10px;
+	color: rgba(255,255,255,0.75);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.App-logo {
+	height: 60px;
+}
+
+.App-title {
+	font-size: 1.5em;
+}
+

@@ -1,0 +1,39 @@
+.autocomplete {
+	width: 300px;
+	position: relative;
+	display: inline-block;
+}
+
+.issue-search-input {
+	border: none;
+	height: 40px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #f1f1f1
+}
+
+.autosuggestion-div {
+	position: absolute;
+	border: 1px solid #d4d4d4;
+	background-color: #fff;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	top: 100%;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.autosuggestion-list {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.autosuggestion-list li {
+    padding: 10px;
+	color: #000000;
+	border-bottom: 1px solid #d4d4d4;
+	cursor: pointer;
+}
