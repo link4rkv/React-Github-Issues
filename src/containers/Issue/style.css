@@ -1,0 +1,9 @@
+.issue-details-div {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+}
+
+.issue-details-div > div {
+	padding: 20px;
+}

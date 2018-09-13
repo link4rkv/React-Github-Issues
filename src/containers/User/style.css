@@ -1,0 +1,9 @@
+.user-details-div {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+}
+
+.user-details-div > div {
+	padding: 20px;
+}

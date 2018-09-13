@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-
+import { baseURL } from '../../api'
+import { Link } from 'react-router-dom'
 import './style.css'
 
 class MainSection extends Component {
 	render () {
 		let resultsHtml = ''
-		if(this.props.issues && this.props.issues.length) {
-			resultsHtml = <table>
+		if(this.props.issues && this.props.issues.length > 0) {
+			resultsHtml = <table className='issues-table'>
 				<thead>
 					<tr>
 						<th></th>
@@ -16,10 +17,11 @@ class MainSection extends Component {
 				<tbody>
 					{
 						this.props.issues.map((issue, index) => {
-							return <tr key={`issue-${issue.id}`}>
-								<td>{index + 1}2</td>
-								<td>{issue.title}</td>
-							</tr>
+							const url = issue.url.split(baseURL)[1]
+							return <tr className='issues-row' key={`issue-${issue.id}`} id={`issue-${issue.id}`}>
+									<td>{issue.number}</td>
+									<td><Link to={`/${url}`}>{issue.title}</Link></td>
+								</tr>
 						})
 					}
 				</tbody>
