@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Aux from '../../hoc/Aux'
-import Header from '../../components/Header'
 import API from '../../api'
 import { Link } from 'react-router-dom'
 import { baseURL } from '../../api'
@@ -38,7 +37,6 @@ class Issue extends Component {
 
 			return (
 				<Aux>
-					<Header />
 					<div className='issue-details-div'>
 						<div className='user-image-div'>
 							<Link to={`/${userURL}`}>

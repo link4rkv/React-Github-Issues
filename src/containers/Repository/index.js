@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Aux from '../../hoc/Aux'
 import './style.css' 
-import Header from '../../components/Header';
 import MainSection from '../../components/MainSection';
 import API from '../../api'
 
@@ -37,7 +36,6 @@ class Repository extends Component {
 	render () {
 		return (
 			<Aux>
-				<Header />
 				<MainSection issues={this.state.issues} />
 			</Aux>
 		)
